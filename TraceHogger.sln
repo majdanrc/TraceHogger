@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceHogger", "TraceHogger\TraceHogger.csproj", "{7FA1E2EF-4F9B-4D8E-AF1E-479B6316DB76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceHogger.UI", "TraceHogger.UI\TraceHogger.UI.csproj", "{47C3D384-DE3E-4A79-AD32-86BB3FC781A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TH.DAL", "TH.DataAccess\TH.DAL.csproj", "{8850C79C-D272-46E9-BD38-525D494F930B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteBubble", "WasteBubble\WasteBubble.csproj", "{CC039BAB-3CE8-4565-98E7-50110504A631}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FA1E2EF-4F9B-4D8E-AF1E-479B6316DB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA1E2EF-4F9B-4D8E-AF1E-479B6316DB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA1E2EF-4F9B-4D8E-AF1E-479B6316DB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA1E2EF-4F9B-4D8E-AF1E-479B6316DB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C3D384-DE3E-4A79-AD32-86BB3FC781A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C3D384-DE3E-4A79-AD32-86BB3FC781A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C3D384-DE3E-4A79-AD32-86BB3FC781A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C3D384-DE3E-4A79-AD32-86BB3FC781A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8850C79C-D272-46E9-BD38-525D494F930B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8850C79C-D272-46E9-BD38-525D494F930B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8850C79C-D272-46E9-BD38-525D494F930B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8850C79C-D272-46E9-BD38-525D494F930B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC039BAB-3CE8-4565-98E7-50110504A631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC039BAB-3CE8-4565-98E7-50110504A631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC039BAB-3CE8-4565-98E7-50110504A631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC039BAB-3CE8-4565-98E7-50110504A631}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
