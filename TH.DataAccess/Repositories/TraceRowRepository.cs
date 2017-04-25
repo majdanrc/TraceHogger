@@ -8,7 +8,7 @@ namespace TH.DataAccess.Repositories
     public class TraceRowRepository
     {
         //private const string QuerySql = @"select * from {0} where TextData not like 'exec sp_reset_connection' and LoginName is not NULL and LoginName<>'NT SERVICE\ReportServer'";
-        private const string QuerySql = @"select * from {0} where TextData not like 'exec sp_reset_connection'";
+        private const string QuerySql = @"select * from {0} where TextData not like 'exec sp_reset_connection' and ApplicationName = '.Net SqlClient Data Provider'";
 
         public static List<TraceRow> GetRows(string tableName)
         {
