@@ -24,7 +24,7 @@ namespace TH.DataAccess.Repositories
                             ? reader.GetString(reader.GetOrdinal("TABLE_NAME"))
                             : string.Empty;
 
-                        result.Add(tableName);
+                        result.Add($"[{tableName}]");
                     }
                 }
                 catch (Exception exc)
