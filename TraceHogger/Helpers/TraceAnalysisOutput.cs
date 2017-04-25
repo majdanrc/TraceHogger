@@ -12,10 +12,12 @@ namespace TraceHogger.Helpers
         {
             var sb = new StringBuilder();
 
-            sb.AppendLine(string.Format("# [name: {0}] statistics: {1} total; {2} grouped; gain -> {3} ({4}%)",
-                analysis.Name, analysis.Total, analysis.Grouped, analysis.Gain, analysis.GainPercent));
-            sb.AppendLine(string.Format("# [name: {0}] statistics: {1} total time;",
-                analysis.Name, (analysis.CleanRows.First().StartTime - analysis.CleanRows.First().EndTime).Milliseconds));
+            sb.AppendLine(
+                $"# [name: {analysis.Name}] statistics: {analysis.Total} total; {analysis.Grouped} grouped; gain -> {analysis.Gain} ({analysis.GainPercent}%)");
+            sb.AppendLine(
+                $"# [name: {analysis.Name}] statistics: {analysis.CleanRows.Sum(r => r.Reads)} reads; {analysis.CleanRows.Sum(r => r.Writes)} writes;");
+            sb.AppendLine(
+                $"# [name: {analysis.Name}] statistics: {(analysis.CleanRows.Last().StartTime - analysis.CleanRows.First().EndTime)} total time;");
 
             const int stringLimit = 100;
 

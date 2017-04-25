@@ -38,7 +38,13 @@ namespace TH.DataAccess.Repositories
                                 : DateTime.MinValue,
                             EndTime = !reader.IsDBNull(reader.GetOrdinal("EndTime"))
                                 ? reader.GetDateTime(reader.GetOrdinal("EndTime"))
-                                : DateTime.MaxValue
+                                : DateTime.MaxValue,
+                            Reads = !reader.IsDBNull(reader.GetOrdinal("Reads"))
+                                ? reader.GetInt64(reader.GetOrdinal("Reads"))
+                                : -1,
+                            Writes = !reader.IsDBNull(reader.GetOrdinal("Writes"))
+                                ? reader.GetInt64(reader.GetOrdinal("Writes"))
+                                : -1
                         };
 
                         result.Add(row);

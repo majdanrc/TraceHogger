@@ -10,6 +10,9 @@ namespace TH.DataAccess.Blocks
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
 
+        public long Reads { get; set; }
+        public long Writes { get; set; }
+
         public TraceRow Clone()
         {
             return new TraceRow
@@ -18,7 +21,9 @@ namespace TH.DataAccess.Blocks
                 TextData = TextData,
                 Duration = Duration,
                 StartTime = StartTime,
-                EndTime = EndTime
+                EndTime = EndTime,
+                Reads = Reads,
+                Writes = Writes
             };
         }
     }
