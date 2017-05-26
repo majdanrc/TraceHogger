@@ -34,6 +34,8 @@
             this.btnAnalyze = new System.Windows.Forms.Button();
             this.nudNumberOfRows = new System.Windows.Forms.NumericUpDown();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnCopyMetrics = new System.Windows.Forms.Button();
+            this.btnCopyRows = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumberOfRows)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,11 +94,33 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnCopyMetrics
+            // 
+            this.btnCopyMetrics.Location = new System.Drawing.Point(750, 12);
+            this.btnCopyMetrics.Name = "btnCopyMetrics";
+            this.btnCopyMetrics.Size = new System.Drawing.Size(146, 23);
+            this.btnCopyMetrics.TabIndex = 6;
+            this.btnCopyMetrics.Text = "copy metrics";
+            this.btnCopyMetrics.UseVisualStyleBackColor = true;
+            this.btnCopyMetrics.Click += new System.EventHandler(this.btnCopyMetrics_Click);
+            // 
+            // btnCopyRows
+            // 
+            this.btnCopyRows.Location = new System.Drawing.Point(902, 12);
+            this.btnCopyRows.Name = "btnCopyRows";
+            this.btnCopyRows.Size = new System.Drawing.Size(146, 23);
+            this.btnCopyRows.TabIndex = 7;
+            this.btnCopyRows.Text = "copy rows";
+            this.btnCopyRows.UseVisualStyleBackColor = true;
+            this.btnCopyRows.Click += new System.EventHandler(this.btnCopyRows_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 540);
+            this.Controls.Add(this.btnCopyRows);
+            this.Controls.Add(this.btnCopyMetrics);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.nudNumberOfRows);
             this.Controls.Add(this.btnAnalyze);
@@ -118,6 +142,8 @@
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.NumericUpDown nudNumberOfRows;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCopyMetrics;
+        private System.Windows.Forms.Button btnCopyRows;
     }
 }
 
