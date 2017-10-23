@@ -80,6 +80,11 @@
             // nudNumberOfRows
             // 
             this.nudNumberOfRows.Location = new System.Drawing.Point(1134, 15);
+            this.nudNumberOfRows.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
             this.nudNumberOfRows.Name = "nudNumberOfRows";
             this.nudNumberOfRows.Size = new System.Drawing.Size(120, 20);
             this.nudNumberOfRows.TabIndex = 4;
